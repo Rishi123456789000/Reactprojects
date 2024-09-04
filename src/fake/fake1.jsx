@@ -23,7 +23,7 @@ export default class Api extends Component {
 
       <div style={{ display: 'flex', gap: '20px' }}>
         <h2>hellowrold</h2>
-        {/* Product List */}
+        
         <div style={{ width: '50%' }}>
           <ul style={{ listStyleType: 'none', padding: 0 }}>
             {this.state.products.map(product => (
@@ -40,8 +40,7 @@ export default class Api extends Component {
 
                 }}
               >
-                <Basiccard rate={product.rating.rate} rat={product.rating.count} title={product.title}
-                  category={product.category} price={`$${product.price}`}
+                <Basiccard rate={product.rating.rate} rat={product.rating.count} title={product.title}category={product.category} price={`$${product.price}`}
                   image={product.image}
                   description={product.description}
                 />
