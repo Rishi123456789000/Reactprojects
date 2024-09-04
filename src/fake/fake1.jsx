@@ -20,7 +20,9 @@ export default class Api extends Component {
 
   render() {
     return (
+
       <div style={{ display: 'flex', gap: '20px' }}>
+        <h2>hellowrold</h2>
         {/* Product List */}
         <div style={{ width: '50%' }}>
           <ul style={{ listStyleType: 'none', padding: 0 }}>
@@ -35,11 +37,11 @@ export default class Api extends Component {
                   padding: '10px',
                   borderRadius: '8px',
                   boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-                
+
                 }}
               >
-                <Basiccard rate={product.rating.rate}rat={product.rating.count}title={product.title}
-                  category={product.category}price={`$${product.price}`}
+                <Basiccard rate={product.rating.rate} rat={product.rating.count} title={product.title}
+                  category={product.category} price={`$${product.price}`}
                   image={product.image}
                   description={product.description}
                 />
@@ -48,7 +50,7 @@ export default class Api extends Component {
           </ul>
         </div>
 
-        
+
         <div style={{ width: '50%' }}>
           {this.state.result && (
             <Basiccard
